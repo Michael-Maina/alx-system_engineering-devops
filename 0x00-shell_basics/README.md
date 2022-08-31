@@ -9,3 +9,7 @@
 8-firstdelete - deletes the file *betty*
 9-firstdirdeletion - deletes **my_first_directory** inside **/tmp/**
 10-back - changes working directory to the previous one
+11-lists - lists all files, including hidden, the **current**, **parent** and **/boot/** directories in long format 
+12-file_type - prints the type of a file, *iamafile* in **/tmp/**
+13-symbolic_link - creates a symbolic link *__ls__* to */bin/ls*
+14-copy_html - creates a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
