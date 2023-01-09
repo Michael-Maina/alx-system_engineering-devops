@@ -1,0 +1,1 @@
+This directory contains images showing progress on the command line challenges on cmdchallenge.com
