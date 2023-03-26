@@ -4,8 +4,8 @@ $str = "Host *
      IdentitiesOnly yes
      "
 
-file { 'config':
+file { '/home/.ssh/config':
   ensure  => present,
-  path    => '~/.ssh/',
+  path    => '/home/.ssh/',
   content => $str
 }
