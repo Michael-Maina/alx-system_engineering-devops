@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script to install Apache
+sudo apt update
+sudo apt-get -y apache2
+sudo service apache2 start
