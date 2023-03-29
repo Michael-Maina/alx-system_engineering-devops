@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 # Script to install Apache
-#sudo apt update
-#sudo apt-get -y install curl
-sudo service apache2 start
+docker exec infallible_lewin sudo service apache2 start
