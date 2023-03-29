@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Script to install Apache
-sudo apt update
-sudo apt-get -y apache2
+#sudo apt update
+#sudo apt-get -y install curl
 sudo service apache2 start
