@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Checks if nginx is installed. If not, installs, else configure to listen on port 80
-sudo apt update
-sudo apt-get install nginx -y
-sudo systemctl nginx start
+# Using your debugging skills, find out what’s keeping your Ubuntu container’s Nginx
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+pkill -1 nginx
