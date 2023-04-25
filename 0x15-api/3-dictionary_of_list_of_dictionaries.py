@@ -30,6 +30,6 @@ if __name__ == "__main__":
                     user_dict = {"username": user_name, "task": title,
                                  "completed": status}
                     users_list.append(user_dict)
-                all_users[user_id] = users_list
+            all_users[str(user_id)] = users_list
 
         f.write(json.dumps(all_users))
