@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """
-Script that, using this REST API, for a given employee ID, returns information
-about his/her TODO list progress
+Script that, using a REST API, returns information about
+all employees' TODO progress
 """
 import json
 import requests
-from sys import argv
 
 
 if __name__ == "__main__":
@@ -31,5 +30,6 @@ if __name__ == "__main__":
                                  "completed": status}
                     users_list.append(user_dict)
             all_users[str(user_id)] = users_list
+            users_list = []
 
         f.write(json.dumps(all_users))
