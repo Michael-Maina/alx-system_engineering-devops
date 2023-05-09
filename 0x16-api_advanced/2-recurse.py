@@ -16,11 +16,13 @@ def recurse(subreddit, hot_list=[], params={}):
     response = requests.get(url, allow_redirects=False,
                             headers=header, params=params)
     data = response.json().get("data")
-    after = data.get("after")
-    before = data.get("before")
 
     if response.status_code == 404:
         return(None)
+
+    after = data.get("after")
+    before = data.get("before")
+
     if response.status_code == 200:
         req = data.get("children")
         for item in req:
