@@ -1,0 +1,5 @@
+# Enable holberton user to open a file without any error message.
+exec { 'file_limit':
+  command  => "sed -i 's/15/4096/' /etc/default/nginx",
+  provider => 'shell'
+}
